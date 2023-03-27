@@ -1,5 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body{
+    font-family: "Roboto", snas-serif;
+
+}
 h1{
     display: flex;
+    /* 水平居中 */
     justify-content: center;
+    color: #4181ee;
+}
+
+ .container{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 300px;
+    min-height: 250px;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
+ rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+
+}
+.card_image img{
+    width:100%;
+}
+.card:nth-child(2){
+    background-color: #4181ee;
+}
+.card:last-child{
+    background-color: purple;
+}
+
+.card_info{
+    /*  */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.card_price{
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-8px);
 }
