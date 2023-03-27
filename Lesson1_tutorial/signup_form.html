@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Sign Up</h1>
+        <!-- filedset 可以放在一个group -->
+        <fieldset>
+            <legend>Your basic info</legend>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="user_firstname" class="textInput">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="user_lastname" class="textInput">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="textInput">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" class="textInput">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="password" class="textInput">
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="date">Birth Date:</label>
+            <input type="date" class="textInput" id="date">
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label>
+
+        </fieldset>
+        <fieldset>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="CN">China</option>
+                <option value="US">United State</option>
+                <option value="UK">United  Kingdom</option>
+                <option value="TR">Turkey</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I am accepting Terms and Conditions</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

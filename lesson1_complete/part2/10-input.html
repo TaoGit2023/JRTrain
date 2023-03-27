@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>input 表单元素</title>
+  </head>
+  <body>
+    <!-- input是个单标签 -->
+    <form action="xxx.php">
+      username:
+      <input
+        type="text"
+        name="username"
+        autocomplete="off"
+        maxlength="6"
+        required
+        placeholder="please enter your name"
+      />
+      <br />
+      password:
+      <input type="password" name="pwd" />
+      <br />
+      <!-- radio,checkbox都要有同样的name值，都可以设置checked -->
+      gender: male<input type="radio" name="gender" value="male" /> female
+      <input type="radio" name="gender" value="female" />
+      <br />
+      hobby: fishing
+      <input type="checkbox" name="hobby" value="fishing" /> reading
+      <input type="checkbox" name="hobby" value="reading" /> traveling
+      <input type="checkbox" name="hobby" value="traveling" checked />
+      <br />
+      <!-- 点击了提交按钮，可以把form里的所有input里面的值提交给后端服务器处理 -->
+      <input type="submit" value="register" />
+      <input type="reset" value="reset" />
+      <input type="button" value="verify" />
+      <br />
+      upload: <input type="file" />
+    </form>
+  </body>
+</html>
