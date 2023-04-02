@@ -1,0 +1,72 @@
+@import "base";
+$primary-color:#555;
+$secondary-color:#666;
+$primary-border: 1px solid $primary-color;
+@mixin alert{
+    color: #000;
+    a{
+        color: pink;
+    }
+}
+@mixin alert2($text-color,$background){
+    color:$text-color;
+    background-color: $background;
+}
+.alert-info{
+    @include alert2(#666,#555)
+}
+body{
+    background-color: green;
+}
+ul{
+    font-size: 16px;
+    li{
+        list-style: none;
+    }
+}
+.alertWarning{
+    @include alert;
+}
+div.box{
+    background-color: $primary-color;
+}
+h1.pageHeader{
+    border: 1px solid $secondary-color;
+}
+h2.pageHeader{
+    border:$primary-border;
+}
+.nav{
+    height: 100px;
+    ul{
+        margin: 0;
+        li{
+            padding: 5px;
+            a{
+                display: block;
+                color: black;
+                &:hover{
+                    background-color: blue($color: #000000);
+                }
+            }
+        }
+    }
+}
+
+.button{
+    padding: 15px;
+    width: 100px;
+    height: 200px;
+}
+.button-info{
+    background-color: yellow;
+    @extend .button
+}
+h3{
+    color: $color;
+}
+@each $animal in cat,dog,pig{
+    .#{$animal}-icon{
+        background-image: url("/images/#{$animal}.png");
+    }
+}

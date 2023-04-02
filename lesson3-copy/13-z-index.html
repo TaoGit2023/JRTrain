@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>定位的堆叠顺序</title>
+    <style>
+      .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+      }
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: green;
+        top: 50px;
+
+        left: 50px;
+      }
+      .box3 {
+        background-color: blue;
+        top: 100px;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1 box">box1</div>
+    <div class="box2 box">box2</div>
+    <div class="box3 box">box3</div>
+  </body>
+</html>
+<!-- 要想提高层级，就要用z-index 默认值为0 -->
+<!-- z-index 可以设置各元素层级关系 -->
+<!-- relative absolute fixed 都可以使用z-index提高层级 -->
+<!-- you need to have a position value other than static (which is the default value).
+   This is because the z-index property only applies to positioned elements. -->
