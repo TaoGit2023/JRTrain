@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 17px;
+  color: #777;
+  font-family: "Poppins, sans-serif";
+  font-weight: 400;
+  background-image: url(./img/main-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: rgba(247, 247, 247, 0.9);
+  overflow-x: hidden;
+  background-blend-mode: overlay;
+}
+
+body .basic-info .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+body .basic-info .container .introduction {
+  max-width: 300px;
+  text-align: right;
+}
+
+body .basic-info .container .introduction h3 {
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  padding: 50px 0;
+  font-size: 36px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #222;
+}
+
+body .basic-info .container .introduction h3 .blue_char {
+  color: #716fff;
+}
+
+body .basic-info .container .introduction h3 .lowercase {
+  text-transform: lowercase;
+}
+
+body .basic-info .container .introduction h3 {
+  display: block;
+  text-align: right;
+  z-index: 5;
+  position: relative;
+  left: 80px;
+  top: -80px;
+}
+
+body .basic-info .container .introduction p {
+  margin-bottom: 30px;
+  text-align: right;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  display: block;
+  margin-right: 20px;
+  margin-top: -130px;
+}
+
+body .basic-info .container .introduction a {
+  text-decoration: none;
+  margin-left: 130px;
+  color: #333;
+  position: relative;
+  right: 30px;
+}
+
+body .basic-info .container .imgs {
+  max-width: 300px;
+}
+
+body .basic-info .container .imgs img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+body .basic-info .container .position {
+  display: flex;
+  align-items: flex-end;
+}
+
+body .basic-info .container .position p {
+  font-size: 36px;
+  line-height: 42px;
+  color: #222;
+}
+
+body .basic-info .container .position p ::after {
+  content: "";
+  width: 105px;
+  height: 7px;
+  background-color: #ff6f91;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
