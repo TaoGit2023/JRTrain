@@ -6,69 +6,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Istanbul - Personal Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/b667b1836c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <section class="basic-info">
     <div class="container">
-        <div class="introduction">
+        <div class="basic-info__introduction">
           <h3>hello, <br> i <span class="lowercase">am</span> <br> <span class="blue_char">maria ilvor</span></h3>
           <p>Lorem Ipsum is simply
             dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
             standard dummy text ever since the 1500s</p>
-            <a href="#">Download CV</a>
+            <button><span class="text">Download CV</span> </button>
         </div>
-        <div class="imgs">
+        <div class="basic-info__photo">
           <img src="./img/my-img.png" alt="photo">
         </div>
-        <div class="position">
+        <div class="basic-info__position">
           <p>Web Developer</p>
         </div>
     </div>
-    <div class="scroll-down"><i class="fa-thin fa-circle-chevron-down"></i></div>
+    <div class="scroll-down"><i class="fa-sharp fa-solid fa-circle-chevron-down fa-5x"></i></div>
   </section>
+  
   <section class="about">
     <div class="container">
       <div class="about-title">
         <h3>about <span class="blue_char">me</span></h3>
       </div>
       <div class="about-content">
-        <div class="details">
-          <div class="detais-container">
+        <div class="about-content__details">
+          <div class="about-content__details--description">
             <h4>Creativity bleeds from the pen of inspiration.</h4>
             <p class="personal_description">I am your client Consultant having <b>8+ years</b>  of experience in this
               field provides complete range of marketing materials and clienting solution to any industry as
               well as corporate clients maintaining their reputation and increasing the client awareness using
               PR & other print media & online marketing activities.</p>
+              <br>
             <p class="personal_description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus accusantium cum facere eligendi, consectetur, excepturi tenetur itaque
             </p>
           </div>
-          <div class="about-details__content">
+          <div class="about-content__details--content">
             <ul>
-              <li><span class="title">Full Name <b>:</b> </span>Maria Ilvor</li>
-              <li><span class="title">Age <b>:</b> </span>26 years</li>
+              <li><span class="title">Name <b>:</b> </span>Maria</li>
               <li><span class="title">Language <b>:</b> </span>English, spanish</li>
               <li><span class="title">Phone No <b>:</b> </span>+00 9876543210</li>
               <li><span class="title">Email <b>:</b> </span>example@gmail.com</li>
-              <li><span class="title">Address <b>:</b> </span>Ruami Mello Moraes, -Salvador -MA,40352, Brazil</li>
+              <li><span class="title">Address <b>:</b> </span>Ruami Mello Moraes Brazil</li>
             </ul>
           </div>
         </div>
-        <div class="skills">
-          <div class="skills-container">
+        <div class="about-content__skills">
+          <div class="about-content__skills--list">
             <div class="skill">
-              <img src="" alt="">
+              <h3>Photoshop</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ipsam praesentium ut similique qui, est, eligendi labore reiciendis distinctio quod quis non iste adipisci quaerat? Ipsum saepe explicabo ratione asperiores.</p>
             </div>
             <div class="skill">
-              <img src="" alt="">
+              <h3>HTML</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt, maxime impedit atque mollitia, quisquam facilis dolorum voluptate quos nesciunt quia porro eaque reiciendis ut quo error enim beatae eos?</p>
             </div>
             <div class="skill">
-              <img src="" alt="">
+              <h3>PHP</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias pariatur saepe magnam odit sunt culpa doloremque quis impedit provident? Fuga quam blanditiis dolorum eum molestiae. Architecto rerum facere voluptas perspiciatis?</p>
             </div>
             <div class="skill">
-              <img src="" alt="">
+              <h3>Javascript</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum possimus voluptate accusantium esse suscipit quod tempore, laudantium officiis sed expedita. Dolorem voluptates eligendi dolore, repellat fugit est aliquid molestiae eaque?</p>
             </div>
           </div>
         </div>
@@ -80,26 +87,82 @@
       <div class="resume-title">
         <h3>my <span class="blue_char">resume</span></h3>
       </div>
-      <div class="resume-container__content">
-        <div class="eductions">
+      <div class="resume-content">
+        <div class="resume-content__eductions">
           <h4>Education</h4>
-          <div class="education"></div>
-          <div class="education"></div>
-          <div class="education"></div>
+          <ul class="timeline">
+            <li class="timeline-item">
+             <div class="time-info">
+              <span class="time"></span>
+             </div>
+             <div class="time-content">
+              <h5></h5>
+              <p></p>
+            </div>
+            </li>
+            <li class="timeline-item">
+              <div class="time-info">
+                <span class="time"></span>
+               </div>
+               <div class="time-content">
+                <h5></h5>
+                <p></p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="time-info">
+                <span class="time"></span>
+               </div>
+               <div class="time-content">
+                <h5></h5>
+                <p></p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="experiences">
+        <div class="resume-content__experiences">
           <h4>Experience</h4>
-          <div class="experience"></div>
-          <div class="experience"></div>
-          <div class="experience"></div>
+         <ul class="timeline">
+          <li class="timeline-item">
+            <div class="time-info">
+              <span class="time"></span>
+             </div>
+             <div class="time-content">
+              <h5></h5>
+              <p></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="time-info">
+              <span class="time"></span>
+             </div>
+             <div class="time-content">
+              <h5></h5>
+              <p></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="time-info">
+              <span class="time"></span>
+             </div>
+             <div class="time-content">
+              <h5></h5>
+              <p></p>
+            </div>
+          </li>
+         </ul>
         </div>
       </div>
-      <div class="services">
-        <div class="service"></div>
-        <div class="service"></div>
-        <div class="service"></div>
-        <div class="service"></div>
-      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+    <div class="services-list">
+      <div class="service"></div>
+      <div class="service"></div>
+      <div class="service"></div>
+      <div class="service"></div>
+    </div>
     </div>
   </section>
   <section class="projects">
@@ -117,7 +180,7 @@
       <div class="news-tiltle">
         <h3>latest <span class="blue_char">news</span></h3>
       </div>
-      <div class="news-list"></div>
+      <div class="news-list"><span>work in progress</span></div>
     </div>
   </section>
   <section class="contact">
@@ -125,10 +188,12 @@
       <div class="contact-title">
         <h3>get <span class="lowercase>in</span> <span class="blue_char">touch</span></h3>
       </div>
+      <div class="contact-content">
       <div class="contact-info"></div>
       <div class="customer-info">
         <form action="#"></form>
       </div>
+    </div>
     </div>
   </section>
 </body>

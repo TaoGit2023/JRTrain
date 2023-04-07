@@ -13,10 +13,14 @@
         sex: "male",
         fn: function () {},
       };
+      console.log(obj.name);
+      console.log(obj["age"]);
 
       // for in 遍历我们的对象
-      // for (变量 in 对象) {
-      // }
+      for (let key in obj) {
+        console.log(key);
+        console.log(obj[key]);
+       }
     </script>
   </head>
   <body></body>

@@ -9,26 +9,54 @@
       // 基础类型解构
       //字符串也可以解构赋值，这是因为此时字符串被转换成了一个类似数组的对象
 
-      // 本质"模式匹配"，只要等号两边模式相同，左边变量就会被赋对应值。
+      const [a,b,c] = [1,2,3];
+      console.log(a,b,c);
 
+      // 本质"模式匹配"，只要等号两边模式相同，左边变量就会被赋对应值。
+let arr = [1,[[2],3]]
+let [foo1, [[bar1],bar2]] = arr;
       // 对象数组解构
       //对象的属性没有次序，变量必须与属性同名，才能取到正确的值
 
       const person = { name: "John", age: 30 };
+      let obj = {
+        bar: 'asd',
+        foo: 123
+      };
+
+      let{ bar, foo} = obj;
 
       // ...解构
 
+      let arr3 = [1,2,3,4,5];
+      const[first,...rest] = arr3;
+
       // 嵌套解构
+      let obj2 = {name:{last:xu,first:tao}};
+      const {name:{first:firstName,last:lastName}} = obj2;
 
       // 解构不成功为undefined
+      const{x,y} = {x:1};
+      //y undefined
 
       // 解构默认赋值
+      const{xx, zz=3} = {xx:1};
 
       //用途
       //1.交换变量
 
       //2.从函数返回多个值
       // 返回一个数组
+      function example(){
+        return{
+          foo3:1,
+          bar3:1
+        };
+      }
+      let {
+        foo3, bar3
+      } = example();
+      console.log(foo3);
 
       // 返回一个对象
     </script>
