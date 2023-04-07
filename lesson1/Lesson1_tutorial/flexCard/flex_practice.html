@@ -12,7 +12,7 @@
     <div class="container">
         <div class="wrapper">
 
-            <div class="card">
+            <div class="card" id="first">
                 <div class="card_image"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80%22" alt="MV"></div>
                 <div class="card_content"><p class="card_title">here is a pictures showing the mountain view</p></div>
                 <div class="card_info"><p class="card_time">30mins</p>
@@ -43,6 +43,14 @@
 
         </div>
     </div>
+    <button id="btn">Click remove</button>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.onclick = function(){
+            let element = document.getElementById('first');
+            element.remove();
+        }
+    </script>
     
 </body>
 </html>
