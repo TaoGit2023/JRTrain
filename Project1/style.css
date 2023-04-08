@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   background-color: rgba(247, 247, 247, 0.9);
   overflow-x: hidden;
   background-blend-mode: overlay;
+  padding: 20px;
 }
 
 body .basic-info .container {
@@ -290,7 +292,7 @@ body .resume .container .resume-content {
 }
 
 body .resume .container .resume-content .resume-content__eductions {
-  max-width: 700px;
+  max-width: 650px;
 }
 
 body .resume .container .resume-content .resume-content__eductions h4 {
@@ -347,7 +349,7 @@ body .resume .container .resume-content .resume-content__eductions .timeline .ti
 }
 
 body .resume .container .resume-content .resume-content__experiences {
-  max-width: 700px;
+  max-width: 650px;
 }
 
 body .resume .container .resume-content .resume-content__experiences h4 {
@@ -427,6 +429,7 @@ body .services .container .services-list .service {
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   position: relative;
+  margin: 10px 0;
 }
 
 body .services .container .services-list .service .icon {
@@ -454,4 +457,346 @@ body .projects .container {
   width: 100%;
   margin: 0 auto;
   padding: 10px;
+}
+
+body .projects .container .project-title h3 {
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  padding: 50px 0;
+  font-size: 36px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+body .projects .container .project-title h3 .blue_char {
+  color: #716fff;
+}
+
+body .projects .container .project-title h3 .lowercase {
+  text-transform: lowercase;
+}
+
+body .projects .container .projects-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+body .projects .container .projects-nav ul li {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 11px;
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 0px 10px;
+  font-weight: 600;
+}
+
+body .projects .container .projects-nav ul li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body .projects .container .project-show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+body .projects .container .project-show .project {
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 30px;
+  position: relative;
+  cursor: default;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+}
+
+body .projects .container .project-show .project .project-content h4 {
+  color: #333;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+body .projects .container .project-show .project .project-content .project-content__link {
+  margin-bottom: 10px;
+  color: #999;
+}
+
+body .projects .container .project-show .project .project-content .project-content__link a {
+  font-size: 14px;
+  color: #999;
+  font-weight: 300;
+}
+
+body .projects .container .project-show .project .project-content p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #555;
+}
+
+body .projects .container .project-show .project .project-summary {
+  margin: 20px;
+  display: flex;
+}
+
+body .projects .container .project-show .project .project-summary .project-summary__logo {
+  width: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+  margin-right: 30px;
+}
+
+body .projects .container .project-show .project .project-summary .project-summary__logo img {
+  height: 100%;
+  width: 100%;
+  background-size: 200px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body .projects .container .project-show .project .project-summary .project-summary__info ul li {
+  margin-bottom: 10px;
+}
+
+body .projects .container .project-show .project .project-summary .project-summary__info ul li a {
+  color: #999;
+  font-weight: 300;
+}
+
+body .projects .container .project-data {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+body .projects .container .project-data .project-data__contents {
+  min-width: 200px;
+  margin-bottom: 30px;
+  padding: 50px;
+  cursor: default;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+  text-align: center;
+}
+
+body .projects .container .project-data .project-data__contents .number {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+  color: #555;
+}
+
+body .projects .container .project-data .project-data__contents .tags {
+  font-size: 18px;
+  color: #555;
+  font-weight: 400;
+}
+
+body .news .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+body .news .container .news-title h3 {
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  padding: 50px 0;
+  font-size: 36px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+body .news .container .news-title h3 .blue_char {
+  color: #716fff;
+}
+
+body .news .container .news-title h3 .lowercase {
+  text-transform: lowercase;
+}
+
+body .news .container .news-list {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+  font-size: 60px;
+  color: #bfa;
+  text-align: center;
+}
+
+body .contact .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+body .contact .container .contact-title h3 {
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  padding: 50px 0;
+  font-size: 36px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+body .contact .container .contact-title h3 .blue_char {
+  color: #716fff;
+}
+
+body .contact .container .contact-title h3 .lowercase {
+  text-transform: lowercase;
+}
+
+body .contact .container .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+body .contact .container .contact-content .contact-info {
+  min-width: 500px;
+}
+
+body .contact .container .contact-content .contact-info .contact-info__content {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+  padding: 20px;
+  align-items: center;
+}
+
+body .contact .container .contact-content .contact-info .contact-info__content .contact-info__content--logo {
+  margin-right: 20px;
+}
+
+body .contact .container .contact-content .contact-info .contact-info__content .contact-info__content--details h4 {
+  margin-bottom: 10px;
+}
+
+body .contact .container .contact-content .contact-info .contact-info__content .contact-info__content--details p {
+  margin: 10px;
+}
+
+body .contact .container .contact-content .customer-info {
+  max-width: 700px;
+}
+
+body .contact .container .contact-content .customer-info form input {
+  width: 100%;
+  padding: 15px;
+  border-color: #dfdfdf;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+body .contact .container .contact-content .customer-info form textarea {
+  width: 100%;
+}
+
+body .contact .container .contact-content .customer-info form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+body .contact .container .contact-content .customer-info form button .text {
+  position: relative;
+  font-family: "Poppins, sans-serif";
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  border-right: 1px solid transparent;
+  border-radius: 30px;
+  margin-right: 50px;
+}
+
+body .contact .container .contact-content .customer-info form button .text::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #f5f5f5;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+body .contact .container .contact-content .customer-info form button .text::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: -60%;
+}
+
+body .foot {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+body .foot .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+body .foot .container .foot-content {
+  border-radius: 15px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+}
+
+body .footer .container {
+  height: 100px;
+  background: #07091c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+body .footer .container .copyright {
+  color: white;
+}
+
+body .footer .container .social_logo ul {
+  display: flex;
+}
+
+body .footer .container .social_logo ul li {
+  margin: 0 10px;
 }
