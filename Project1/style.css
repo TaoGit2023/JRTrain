@@ -52,13 +52,29 @@ body .basic-info .container .basic-info__introduction h3 .lowercase {
   text-transform: lowercase;
 }
 
-body .basic-info .container .basic-info__introduction h3 {
+body .basic-info .container .basic-info__introduction h1 {
   display: block;
   text-align: right;
   z-index: 5;
   position: relative;
   left: 80px;
   top: -80px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  padding: 50px 0;
+  font-size: 36px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+body .basic-info .container .basic-info__introduction h1 .blue_char {
+  color: #716fff;
+}
+
+body .basic-info .container .basic-info__introduction h1 .lowercase {
+  text-transform: lowercase;
 }
 
 body .basic-info .container .basic-info__introduction p {
@@ -152,10 +168,16 @@ body .basic-info .scroll-down {
   margin: 70px auto;
 }
 
+body .about {
+  padding: 80px 0;
+  width: 100%;
+}
+
 body .about .container {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 body .about .container .about-title {
@@ -184,7 +206,7 @@ body .about .container .about-title h3 .lowercase {
 body .about .container .about-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 body .about .container .about-content .about-content__details {
@@ -263,7 +285,8 @@ body .about .container .about-content .about-content__skills .about-content__ski
 body .resume .container {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 body .resume .container .resume-title h3 {
@@ -288,7 +311,7 @@ body .resume .container .resume-title h3 .lowercase {
 body .resume .container .resume-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 body .resume .container .resume-content .resume-content__eductions {
@@ -408,13 +431,14 @@ body .resume .container .resume-content .resume-content__experiences .timeline .
 body .services .container {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 body .services .container .services-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 body .services .container .services-list .service {
@@ -429,7 +453,7 @@ body .services .container .services-list .service {
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   position: relative;
-  margin: 10px 0;
+  margin: 10px 30px;
 }
 
 body .services .container .services-list .service .icon {
@@ -456,7 +480,8 @@ body .services .container .services-list .service .service-content p {
 body .projects .container {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 body .projects .container .project-title h3 {
@@ -502,13 +527,13 @@ body .projects .container .projects-nav ul li button {
 body .projects .container .project-show {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 50px;
 }
 
 body .projects .container .project-show .project {
   max-width: 600px;
-  margin-bottom: 30px;
+  margin: 30px 30px;
   padding: 30px;
   position: relative;
   cursor: default;
@@ -576,12 +601,12 @@ body .projects .container .project-data {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 body .projects .container .project-data .project-data__contents {
   min-width: 200px;
-  margin-bottom: 30px;
+  margin: 30px 30px;
   padding: 50px;
   cursor: default;
   border-radius: 15px;
@@ -603,10 +628,16 @@ body .projects .container .project-data .project-data__contents .tags {
   font-weight: 400;
 }
 
+body .news {
+  width: 100%;
+  margin: 0 auto;
+}
+
 body .news .container {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 body .news .container .news-title h3 {
@@ -630,7 +661,6 @@ body .news .container .news-title h3 .lowercase {
 
 body .news .container .news-list {
   padding: 15px;
-  width: 100%;
   margin-bottom: 30px;
   padding: 30px;
   border-radius: 15px;
@@ -644,7 +674,8 @@ body .news .container .news-list {
 body .contact .container {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 body .contact .container .contact-title h3 {
@@ -669,17 +700,18 @@ body .contact .container .contact-title h3 .lowercase {
 body .contact .container .contact-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 body .contact .container .contact-content .contact-info {
   min-width: 500px;
+  margin: 0 30px;
 }
 
 body .contact .container .contact-content .contact-info .contact-info__content {
   display: flex;
   width: 100%;
-  margin: 20px 0;
+  margin-bottom: 30px;
   border-radius: 15px;
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
@@ -701,6 +733,7 @@ body .contact .container .contact-content .contact-info .contact-info__content .
 
 body .contact .container .contact-content .customer-info {
   max-width: 700px;
+  margin-left: 90px;
 }
 
 body .contact .container .contact-content .customer-info form input {
@@ -768,9 +801,10 @@ body .foot {
 body .foot .container {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 body .foot .container .foot-content {
@@ -778,6 +812,7 @@ body .foot .container .foot-content {
   padding: 10px;
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+  margin: 30px 30px;
 }
 
 body .footer .container {
