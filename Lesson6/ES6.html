@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+      const divs = document.querySelectorAll("div");
+      const divArr = [...divs];
+      console.log(divs);
+     /// -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      const class1 = {
+        name: "class 56",
+        studdents: ["xiaohong", "xiaoming", "xiaoli", "xiaohuang"],
+        [Symbol.iterator]() {
+          let index = 0;
+          return {
+            next: () => {
+              if (index < this.studdents.length) {
+                const result = { value: this.studdents[index], done: false };
+                index++;
+                return result;
+              } else {
+                return { value: undefined, done: true };
+              }
+            },
+          };
+        },
+      };
+      for (let x of class1) {
+        console.log(x);
+      }
+  /// -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      function one(){
+        setTimeout(()=>{
+            console.log(111);
+            iterator.next();
+        },1000)
+      }
+      function two(){
+        setTimeout(()=>{
+            console.log(222);
+            iterator.next();
+        },2000)
+      }
+      function three(){
+        setTimeout(()=>{
+            console.log(333);
+            iterator.next();
+        },3000)
+      }
+      function * gen(){
+        yield one();
+        yield two();
+        yield three();
+      }
+      let iterator = gen();
+      iterator.next();
+    </script>
+  </body>
+</html>
