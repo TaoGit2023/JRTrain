@@ -454,13 +454,18 @@ body .services .container .services-list .service {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   position: relative;
   margin: 10px 30px;
+  transition: all 1000ms ease;
 }
 
-body .services .container .services-list .service .icon {
+body .services .container .services-list .service .front {
+  position: absolute;
+}
+
+body .services .container .services-list .service .front .icon {
   margin-bottom: 20px;
 }
 
-body .services .container .services-list .service .service-content h3 {
+body .services .container .services-list .service .front .service-content h3 {
   margin-bottom: 15px;
   color: #333;
   text-align: center;
@@ -469,12 +474,16 @@ body .services .container .services-list .service .service-content h3 {
   font-weight: 600;
 }
 
-body .services .container .services-list .service .service-content p {
+body .services .container .services-list .service .front .service-content p {
   margin: 0;
   color: #555;
   text-align: center;
   font-size: 17px;
   line-height: 22px;
+}
+
+body .services .container .services-list .service:hover {
+  transform: rotateY(180deg);
 }
 
 body .projects .container {
