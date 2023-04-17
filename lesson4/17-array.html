@@ -17,7 +17,13 @@
       // (2) push() 参数直接写 数组元素就可以了
       // (3) push完毕之后，返回的结果是 新数组的长度
       // (4) 原数组也会发生变化
-      let arr =[1,2,3];
+      let arr = [1, 2, 3];
+      const newArr = arr.map((item) => item * 2);
+      const newArr2 = arr.filter(function (item) {
+        return item < 3;
+      });
+      console.log(newArr);
+      console.log(newArr2);
       arr.push(4);
       console.log(arr);
       arr.pop();
@@ -26,6 +32,41 @@
       console.log(arr);
       arr.shift();
       console.log(arr);
+
+      let form = {
+        client: null,
+
+        clientType: "M",
+
+        callType: null,
+
+        patientFirstName: "M",
+
+        patientLastName: "M",
+
+        DOB: null,
+
+        PHNumber: null,
+
+        address: "M",
+
+        site: null,
+      };
+      let obj = Object.assign({},{
+        ...form,
+      DOB:"12/11/1988",
+    address:"20 bond street"});
+    console.log(form);
+    form = {...obj};
+    console.log(form);
+    let keys = Object.keys(form);
+    console.log(keys);
+    let values = Object.values(form);
+    let arrKey = keys.filter(function(key){
+      return form[key] ==='M'
+    });
+    console.log(`${arrKey} are required` );
+
 
 
       // 2. unshift 在我们数组的开头 添加一个或者多个数组元素

@@ -450,7 +450,6 @@ body .services .container .services-list .service {
   perspective: inherit;
   border-radius: 15px;
   transform: rotateY(0deg);
-  background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   position: relative;
   margin: 10px 30px;
@@ -459,6 +458,14 @@ body .services .container .services-list .service {
 
 body .services .container .services-list .service .front {
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 body .services .container .services-list .service .front .icon {

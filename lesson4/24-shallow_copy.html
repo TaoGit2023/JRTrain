@@ -14,6 +14,16 @@
           age: 18,
         },
       };
+
+      let arr = ['apple','banana','orange'];
+      const shallowCopyArr1 = [...arr];
+      const shallowCopyArr2 = Array.from(arr);
+      const shallowCopyArr3 = arr.slice();
+      let copyObj = Object.assign({},obj);
+      console.log(copyObj);
+      obj.msg.age = 20;
+      console.log("obj",obj);
+      console.log("copyObj", copyObj);
     </script>
   </head>
   <body></body>
