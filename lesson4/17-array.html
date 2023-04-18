@@ -52,22 +52,24 @@
 
         site: null,
       };
-      let obj = Object.assign({},{
-        ...form,
-      DOB:"12/11/1988",
-    address:"20 bond street"});
-    console.log(form);
-    form = {...obj};
-    console.log(form);
-    let keys = Object.keys(form);
-    console.log(keys);
-    let values = Object.values(form);
-    let arrKey = keys.filter(function(key){
-      return form[key] ==='M'
-    });
-    console.log(`${arrKey} are required` );
-
-
+      let obj = Object.assign(
+        {},
+        {
+          ...form,
+          DOB: "12/11/1988",
+          address: "20 bond street",
+        }
+      );
+      console.log(form);
+      form = { ...obj };
+      console.log(form);
+      let keys = Object.keys(form);
+      console.log(keys);
+      let values = Object.values(form);
+      let arrKey = keys.filter(function (key) {
+        return form[key] === "M";
+      });
+      console.log(`${arrKey} are required`);
 
       // 2. unshift 在我们数组的开头 添加一个或者多个数组元素
 

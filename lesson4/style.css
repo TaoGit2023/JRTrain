@@ -1,0 +1,49 @@
+.flip-container {
+    height: 200px;
+    width: 800px;
+    perspective: 1000px;
+  }
+  
+  .flip-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .flipper {
+    max-width: 500px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .front, .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background-color: #f00;
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    background-color: #0f0;
+    transform: rotateY(180deg);
+  }
+  
+  .flipper:hover {
+    transform: rotateY(180deg);
+  }
+  
