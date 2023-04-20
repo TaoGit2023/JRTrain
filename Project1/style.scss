@@ -415,7 +415,7 @@ body {
           min-width: 250px;
           max-width: 300px;
           
-          .front {
+          .flip_card--front {
             box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
             backface-visibility: hidden;
             background-color: #fff;
@@ -449,7 +449,7 @@ body {
               }
             }
           }
-          .back{
+          .flip_card--back{
             box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
             backface-visibility: hidden;
             background-color: blueviolet;
