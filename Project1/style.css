@@ -446,29 +446,32 @@ body .services .container .services-list {
 }
 
 body .services .container .services-list .service {
+  height: 300px;
+  width: 300px;
+}
+
+body .services .container .services-list .service .service_flip {
+  height: 100%;
+  width: 100%;
   position: relative;
-  min-width: 250px;
-  max-width: 300px;
+  transition: all 2s;
+  transform-style: preserve-3d;
+  transform-origin: center center;
 }
 
-body .services .container .services-list .service .flip_card--front {
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
-  backface-visibility: hidden;
+body .services .container .services-list .service .service_flip .front {
   background-color: #fff;
-  box-sizing: border-box;
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px;
-  margin-right: 20px;
   position: absolute;
-  transition: transform 0.5s;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
 }
 
-body .services .container .services-list .service .flip_card--front .icon {
+body .services .container .services-list .service .service_flip .front .icon {
   margin-bottom: 20px;
 }
 
-body .services .container .services-list .service .flip_card--front .service-content h3 {
+body .services .container .services-list .service .service_flip .front .service-content h3 {
   margin-bottom: 15px;
   color: #333;
   text-align: center;
@@ -477,7 +480,7 @@ body .services .container .services-list .service .flip_card--front .service-con
   font-weight: 600;
 }
 
-body .services .container .services-list .service .flip_card--front .service-content p {
+body .services .container .services-list .service .service_flip .front .service-content p {
   margin: 0;
   color: #555;
   text-align: center;
@@ -485,21 +488,16 @@ body .services .container .services-list .service .flip_card--front .service-con
   line-height: 22px;
 }
 
-body .services .container .services-list .service .flip_card--back {
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
-  backface-visibility: hidden;
+body .services .container .services-list .service .service_flip .back {
   background-color: blueviolet;
-  box-sizing: border-box;
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px;
-  margin-right: 20px;
   position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
   transform: rotateY(180deg);
-  transition: transform 0.5s;
 }
 
-body .services .container .services-list .service .flip_card--back .service-content h3 {
+body .services .container .services-list .service .service_flip .back .service-content h3 {
   margin-bottom: 15px;
   color: #fff;
   text-align: center;
@@ -508,7 +506,7 @@ body .services .container .services-list .service .flip_card--back .service-cont
   font-weight: 600;
 }
 
-body .services .container .services-list .service .flip_card--back .service-content p {
+body .services .container .services-list .service .service_flip .back .service-content p {
   margin: 0;
   color: #fff;
   text-align: center;
@@ -516,7 +514,7 @@ body .services .container .services-list .service .flip_card--back .service-cont
   line-height: 22px;
 }
 
-body .services .container .services-list .service .readmore a {
+body .services .container .services-list .service .service_flip .back .service-content .readmore a {
   display: block;
   width: 100px;
   height: 30px;
@@ -529,12 +527,8 @@ body .services .container .services-list .service .readmore a {
   margin-top: 20px;
 }
 
-body .services .container .services-list .service:hover .front {
+body .services .container .services-list .service:hover .service_flip {
   transform: rotateY(180deg);
-}
-
-body .services .container .services-list .service:hover .back {
-  transform: rotateY(0deg);
 }
 
 body .projects .container {
