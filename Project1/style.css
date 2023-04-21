@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,6 @@ body {
 body .basic-info {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .basic-info .container {
@@ -32,6 +32,7 @@ body .basic-info .container {
   margin-top: 100px;
   padding: 12px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 body .basic-info .container .basic-info__introduction {
@@ -183,17 +184,18 @@ body .basic-info .scroll-down {
   margin: 70px auto;
 }
 
+body .basic-info .scroll-down a i {
+  color: #000;
+}
+
 body .about {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .about .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 body .about .container .about-title {
@@ -301,14 +303,11 @@ body .about .container .about-content .about-content__skills .about-content__ski
 body .resume {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .resume .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 body .resume .container .resume-title h3 {
@@ -453,14 +452,11 @@ body .resume .container .resume-content .resume-content__experiences .timeline .
 body .services {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .services .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 body .services .container .services-list {
@@ -568,14 +564,11 @@ body .services .container .services-list .service:hover .service_flip {
 body .projects {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .projects .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 body .projects .container .project-title h3 {
@@ -725,14 +718,11 @@ body .projects .container .project-data .project-data__contents .tags {
 body .news {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .news .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 body .news .container .news-title h3 {
@@ -769,14 +759,11 @@ body .news .container .news-list {
 body .contact {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .contact .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 body .contact .container .contact-title h3 {
@@ -897,7 +884,6 @@ body .contact .container .contact-content .customer-info form button .text::afte
 body .foot {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
   margin-top: 100px;
   margin-bottom: 200px;
 }
@@ -905,8 +891,6 @@ body .foot {
 body .foot .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
   display: flex;
   justify-content: center;
 }
@@ -922,7 +906,6 @@ body .foot .container .foot-content {
 body .footer {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
 }
 
 body .footer .container {
