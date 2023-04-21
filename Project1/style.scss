@@ -19,16 +19,16 @@
   }
 }
 
+@mixin section_style(){
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
 @mixin container_style() {
   width: 100%;
   margin: 0 auto;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-@mixin section_style {
-  padding: 80px 0;
-  width: 100%;
 }
 
 @mixin resume_style() {
@@ -151,8 +151,8 @@ body {
   overflow-x: hidden;
   background-blend-mode: overlay;
   padding: 20px;
-
   .basic-info {
+    @include section_style;
     .container {
       display: flex;
       justify-content: center;
@@ -250,6 +250,14 @@ body {
         img {
           width: 100%;
           filter: grayscale(100%);
+          position: relative;
+          transition: all 1s;
+          z-index: 0;
+        }
+        img:hover{
+          filter: grayscale(0%);
+          z-index: 999;
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
         }
       }
 
@@ -379,6 +387,7 @@ body {
   }
 
   .resume {
+    @include section_style;
     .container {
       @include container_style;
 
@@ -403,7 +412,7 @@ body {
   }
 
   .services {
-    margin-bottom: 200px;
+    @include section_style;
     .container {
       @include container_style;
       .services-list {
@@ -420,12 +429,16 @@ body {
             transition: all 2s;
             transform-style: preserve-3d;
             transform-origin: center center;
-            .front {
+            .flip_card--front {
               background-color: #fff;
               position: absolute;
               top: 0;
               left: 0;
               backface-visibility: hidden;
+              border-radius: 15px;
+              text-align: center;
+              padding: 20px;
+              margin-right: 20px;
               .icon {
                 margin-bottom: 20px;
               }
@@ -448,13 +461,16 @@ body {
                 }
               }
             }
-            .back {
+            .flip_card--back {
               background-color: blueviolet;
               position: absolute;
               top: 0;
               left: 0;
               backface-visibility: hidden;
               transform: rotateY(180deg);
+              text-align: center;
+              padding: 20px;
+              border-radius: 15px;
               .service-content {
                 h3 {
                   margin-bottom: 15px;
@@ -472,20 +488,21 @@ body {
                   font-size: 17px;
                   line-height: 22px;
                 }
-                .readmore {
-                  a {
-                    display: block;
-                    width: 100px;
-                    height: 30px;
-                    border: 1px solid white;
-                    border-radius: 20px;
-                    color: white;
-                    line-height: 30px;
-                    text-align: center;
-                    margin: 0 auto;
-                    margin-top: 20px;
-                  }
+              }
+              .readmore{
+                display: inline-flex;
+                background-color: blueviolet;
+                width: 100px;
+                height: 30px;
+                border-radius: 15px;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid white;
+                margin: 10px 0;
+                a{
+                  color: #FFF;
                 }
+
               }
             }
           }
@@ -498,6 +515,7 @@ body {
   }
 
   .projects {
+    @include section_style;
     .container {
       @include container_style;
 
@@ -641,8 +659,7 @@ body {
   }
 
   .news {
-    width: 100%;
-    margin: 0 auto;
+    @include section_style;
     .container {
       @include container_style;
 
@@ -665,6 +682,7 @@ body {
   }
 
   .contact {
+    @include section_style;
     .container {
       @include container_style;
       .contact-title {
@@ -727,6 +745,7 @@ body {
     }
   }
   .foot {
+    @include section_style;
     margin-top: 100px;
     margin-bottom: 200px;
     .container {
@@ -743,6 +762,7 @@ body {
     }
   }
   .footer {
+    @include section_style;
     .container {
       height: 100px;
       background: #07091c;

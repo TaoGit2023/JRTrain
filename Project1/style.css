@@ -20,6 +20,12 @@ body {
   padding: 20px;
 }
 
+body .basic-info {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 body .basic-info .container {
   display: flex;
   justify-content: center;
@@ -137,6 +143,15 @@ body .basic-info .container .basic-info__photo {
 body .basic-info .container .basic-info__photo img {
   width: 100%;
   filter: grayscale(100%);
+  position: relative;
+  transition: all 1s;
+  z-index: 0;
+}
+
+body .basic-info .container .basic-info__photo img:hover {
+  filter: grayscale(0%);
+  z-index: 999;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 body .basic-info .container .basic-info__position {
@@ -169,8 +184,9 @@ body .basic-info .scroll-down {
 }
 
 body .about {
-  padding: 80px 0;
   width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body .about .container {
@@ -280,6 +296,12 @@ body .about .container .about-content .about-content__skills .about-content__ski
   text-align: center;
   color: #333;
   font-size: 20px;
+}
+
+body .resume {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body .resume .container {
@@ -429,7 +451,9 @@ body .resume .container .resume-content .resume-content__experiences .timeline .
 }
 
 body .services {
-  margin-bottom: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body .services .container {
@@ -459,19 +483,23 @@ body .services .container .services-list .service .service_flip {
   transform-origin: center center;
 }
 
-body .services .container .services-list .service .service_flip .front {
+body .services .container .services-list .service .service_flip .flip_card--front {
   background-color: #fff;
   position: absolute;
   top: 0;
   left: 0;
   backface-visibility: hidden;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 20px;
 }
 
-body .services .container .services-list .service .service_flip .front .icon {
+body .services .container .services-list .service .service_flip .flip_card--front .icon {
   margin-bottom: 20px;
 }
 
-body .services .container .services-list .service .service_flip .front .service-content h3 {
+body .services .container .services-list .service .service_flip .flip_card--front .service-content h3 {
   margin-bottom: 15px;
   color: #333;
   text-align: center;
@@ -480,7 +508,7 @@ body .services .container .services-list .service .service_flip .front .service-
   font-weight: 600;
 }
 
-body .services .container .services-list .service .service_flip .front .service-content p {
+body .services .container .services-list .service .service_flip .flip_card--front .service-content p {
   margin: 0;
   color: #555;
   text-align: center;
@@ -488,16 +516,19 @@ body .services .container .services-list .service .service_flip .front .service-
   line-height: 22px;
 }
 
-body .services .container .services-list .service .service_flip .back {
+body .services .container .services-list .service .service_flip .flip_card--back {
   background-color: blueviolet;
   position: absolute;
   top: 0;
   left: 0;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-body .services .container .services-list .service .service_flip .back .service-content h3 {
+body .services .container .services-list .service .service_flip .flip_card--back .service-content h3 {
   margin-bottom: 15px;
   color: #fff;
   text-align: center;
@@ -506,7 +537,7 @@ body .services .container .services-list .service .service_flip .back .service-c
   font-weight: 600;
 }
 
-body .services .container .services-list .service .service_flip .back .service-content p {
+body .services .container .services-list .service .service_flip .flip_card--back .service-content p {
   margin: 0;
   color: #fff;
   text-align: center;
@@ -514,21 +545,30 @@ body .services .container .services-list .service .service_flip .back .service-c
   line-height: 22px;
 }
 
-body .services .container .services-list .service .service_flip .back .service-content .readmore a {
-  display: block;
+body .services .container .services-list .service .service_flip .flip_card--back .readmore {
+  display: inline-flex;
+  background-color: blueviolet;
   width: 100px;
   height: 30px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid white;
-  border-radius: 20px;
-  color: white;
-  line-height: 30px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 10px 0;
+}
+
+body .services .container .services-list .service .service_flip .flip_card--back .readmore a {
+  color: #FFF;
 }
 
 body .services .container .services-list .service:hover .service_flip {
   transform: rotateY(180deg);
+}
+
+body .projects {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body .projects .container {
@@ -685,6 +725,7 @@ body .projects .container .project-data .project-data__contents .tags {
 body .news {
   width: 100%;
   margin: 0 auto;
+  padding: 10px;
 }
 
 body .news .container {
@@ -723,6 +764,12 @@ body .news .container .news-list {
   font-size: 60px;
   color: #bfa;
   text-align: center;
+}
+
+body .contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body .contact .container {
@@ -848,6 +895,9 @@ body .contact .container .contact-content .customer-info form button .text::afte
 }
 
 body .foot {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
   margin-top: 100px;
   margin-bottom: 200px;
 }
@@ -867,6 +917,12 @@ body .foot .container .foot-content {
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
   margin: 30px 30px;
+}
+
+body .footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 body .footer .container {
