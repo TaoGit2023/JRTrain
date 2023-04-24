@@ -11,57 +11,63 @@
     <div></div>
     <div></div>
     <script>
-      const divs = document.querySelectorAll("div");
-      const divArr = [...divs];
-      console.log(divs);
-     /// -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      const class1 = {
-        name: "class 56",
-        studdents: ["xiaohong", "xiaoming", "xiaoli", "xiaohuang"],
-        [Symbol.iterator]() {
-          let index = 0;
-          return {
-            next: () => {
-              if (index < this.studdents.length) {
-                const result = { value: this.studdents[index], done: false };
-                index++;
-                return result;
-              } else {
-                return { value: undefined, done: true };
-              }
-            },
-          };
-        },
-      };
-      for (let x of class1) {
-        console.log(x);
+      //let num = prompt("please input a number");
+      let arr1 = [1, 2, 3, 3, 45, 3, 8, 1, 10];
+      function filter(arr, cb) {
+        let newArr = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (cb(arr[i])) {
+            newArr.push(arr[i]);
+          }
+        }
+        return newArr;
       }
-  /// -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      function one(){
-        setTimeout(()=>{
-            console.log(111);
-            iterator.next();
-        },1000)
+      let res = filter(arr1, a=>a%2===0);
+      function powerFn(cb){
+        return ()=>{
+          console.log('new data');
+          const res = cb;
+          return res;
+        }
       }
-      function two(){
-        setTimeout(()=>{
-            console.log(222);
-            iterator.next();
-        },2000)
+      const newFilter = powerFn(filter(arr1, a=>a<10));
+
+      function outer(){
+        let num = 0;
+        return ()=>{
+          num++;
+          console.log(num);
+        };
       }
-      function three(){
-        setTimeout(()=>{
-            console.log(333);
-            iterator.next();
-        },3000)
-      }
-      function * gen(){
-        yield one();
-        yield two();
-        yield three();
-      }
-      let iterator = gen();
-      iterator.next();
+
+      //const newOuter = outer();
+      let a= 'window a';
+function fn3(){
+  let a = 'fn3 a';
+  function fn4(){
+    console.log(a);
+    console.log();
+  }
+  return fn4;
+}
+let fn4= fn3();
+fn4();
+
+let arr= [1,2,3,4,5,2,1,4,23,2,5,3,1,5,3];
+newArr = new Set(arr);
+arr = [...newArr];
+arr.sort((a,b)=>a-b);
+console.log(arr);
+let arr2 = ['xiao','dao','ren'];
+arr2.forEach(element=>console.log(element));
+let res2 = arr.filter(element=>element%2===0);
+console.log(res2);
+let res3 = arr.map(ele=>ele*2);
+console.log(res3);
+let res4 = arr.reduce((a,b)=>a+b);
+
+
+      //num % 2 === 0 ? console.log("even number") : console.log("odd number");
     </script>
   </body>
 </html>
