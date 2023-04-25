@@ -1,2 +1,13 @@
-let num = prompt("please input a number");
-num%2===0? console.log('even number') : console.log('odd number');
+
+    let counter = 0;
+    function increment(){
+        counter++;
+    }
+    function getCounter(){
+        return counter;
+    }
+
+    module.exports = {
+        increment,
+        getCounter
+    }
