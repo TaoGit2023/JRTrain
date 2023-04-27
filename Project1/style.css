@@ -21,6 +21,89 @@ body {
   padding: 20px;
 }
 
+body .nav .nav-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  background-color: #07091c;
+  opacity: 0.7;
+}
+
+body .nav .nav-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body .nav .nav-button a .line1 {
+  width: 60%;
+  height: 1px;
+  border: 1px solid white;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+body .nav .nav-button a .line2 {
+  width: 40%;
+  height: 1px;
+  border: 1px solid white;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+body .nav .nav-button a .line3 {
+  width: 60%;
+  height: 1px;
+  border: 1px solid white;
+  background-color: white;
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+
+body .nav .nav-list-container {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  right: -200px;
+  top: 0;
+  background-color: #07091c;
+  display: block;
+  transition: all 1s;
+}
+
+body .nav .nav-list-container .nav-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  font-size: 30px;
+  color: white;
+}
+
+body .nav .nav-list-container .nav-list ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+
+body .nav .nav-list-container .nav-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+body .nav .nav-button:active .nav-list-container {
+  z-index: 9999;
+  position: fixed;
+  right: 250px;
+}
+
 body .basic-info {
   width: 100%;
   margin: 0 auto;
