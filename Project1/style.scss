@@ -249,7 +249,7 @@ body {
           text-align: right;
           z-index: 5;
           position: relative;
-          left: 80px;
+          left: 120px;
           top: -80px;
           text-transform: capitalize;
           margin-bottom: 40px;
@@ -328,13 +328,11 @@ body {
 
         img {
           width: 100%;
-          filter: grayscale(100%);
           position: relative;
           transition: all 1s;
           z-index: 0;
         }
         img:hover{
-          filter: grayscale(0%);
           z-index: 999;
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
         }
