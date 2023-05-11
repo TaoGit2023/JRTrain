@@ -375,12 +375,14 @@ body .about .container .about-content .about-content__skills .about-content__ski
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
+  text-align: justify;
 }
 
 body .about .container .about-content .about-content__skills .about-content__skills--list .skill h3 {
   text-align: center;
   color: #333;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 body .resume {
@@ -463,10 +465,10 @@ body .resume .container .resume-content .resume-content__eductions .timeline .ti
 
 body .resume .container .resume-content .resume-content__eductions .timeline .timeline-item .time-content h5 {
   margin-top: 15px;
-  color: #ff6f91;
+  color: #333;
   font-size: 18px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 body .resume .container .resume-content .resume-content__eductions .timeline .timeline-item .time-content h5 .sub {
@@ -520,10 +522,10 @@ body .resume .container .resume-content .resume-content__experiences .timeline .
 
 body .resume .container .resume-content .resume-content__experiences .timeline .timeline-item .time-content h5 {
   margin-top: 15px;
-  color: #ff6f91;
+  color: #333;
   font-size: 18px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 body .resume .container .resume-content .resume-content__experiences .timeline .timeline-item .time-content h5 .sub {
@@ -551,6 +553,7 @@ body .services .container .services-list {
 body .services .container .services-list .service {
   height: 300px;
   width: 300px;
+  box-sizing: border-box;
 }
 
 body .services .container .services-list .service .service_flip {

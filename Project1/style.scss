@@ -73,10 +73,10 @@
       .time-content {
         h5 {
           margin-top: 15px;
-          color: #ff6f91;
+          color: #333;
           font-size: 18px;
           line-height: 22px;
-          font-weight: 500;
+          font-weight: 800;
 
           .sub {
             margin-left: 15px;
@@ -455,11 +455,13 @@ body {
               background-color: #fff;
               border-radius: 15px;
               box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
+              text-align: justify;
 
               h3 {
                 text-align: center;
                 color: #333;
                 font-size: 20px;
+                margin-bottom: 5px;
               }
             }
           }
@@ -504,6 +506,7 @@ body {
         .service {
           height: 300px;
           width: 300px;
+          box-sizing: border-box;
           .service_flip {
             height: 100%;
             width: 100%;
@@ -521,6 +524,7 @@ body {
               text-align: center;
               padding: 20px;
               margin-right: 20px;
+            
               .icon {
                 margin-bottom: 20px;
               }
