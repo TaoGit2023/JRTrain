@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 @mixin h3_style() {
   h3 {
     text-transform: capitalize;
@@ -20,14 +20,13 @@
   }
 }
 
-@mixin section_style(){
+@mixin section_style() {
   width: 100%;
   margin: 0 auto;
 }
 @mixin container_style() {
   width: 100%;
   margin: 0 auto;
-
 }
 
 @mixin resume_style() {
@@ -53,6 +52,8 @@
       box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
       background: #fff;
       box-sizing: border-box;
+      width: 100%;
+      height: 180px;
 
       .time-info {
         margin-top: -40px;
@@ -150,84 +151,84 @@ body {
   overflow-x: hidden;
   background-blend-mode: overlay;
   padding: 20px;
-  .nav{
-    .nav-button{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    position: fixed;
-    top: 100px;
-    right: 100px;
-    background-color: #07091c;
-    opacity: 0.7;
-    a{
-      display: block;
-      width: 100%;
-      height: 100%;
-      position:relative;
-      .line1{
-        // max-width: ;
-        width: 60%;
-        height: 1px;
-        border: 1px solid white;
-        background-color: white;
-        position: absolute;
-        top:15px;
-        left: 10px
-      }
-      .line2{
-        width: 40%;
-        height: 1px;
-        border: 1px solid white;
-        background-color: white;
-        position: absolute;
-        top:25px;
-        left: 20px
-      }
-      .line3{
-        width: 60%;
-        height: 1px;
-        border: 1px solid white;
-        background-color: white;
-        position: absolute;
-        top:35px;
-        left: 10px
+  .nav {
+    .nav-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      position: fixed;
+      top: 100px;
+      right: 100px;
+      background-color: #07091c;
+      opacity: 0.7;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .line1 {
+          // max-width: ;
+          width: 60%;
+          height: 1px;
+          border: 1px solid white;
+          background-color: white;
+          position: absolute;
+          top: 15px;
+          left: 10px;
+        }
+        .line2 {
+          width: 40%;
+          height: 1px;
+          border: 1px solid white;
+          background-color: white;
+          position: absolute;
+          top: 25px;
+          left: 20px;
+        }
+        .line3 {
+          width: 60%;
+          height: 1px;
+          border: 1px solid white;
+          background-color: white;
+          position: absolute;
+          top: 35px;
+          left: 10px;
+        }
       }
     }
-    }
-    .nav-list-container{
+    .nav-list-container {
       height: 100%;
       width: 250px;
       position: fixed;
-      right: -250px;;
-      top:0;
+      right: -250px;
+      top: 0;
       background-color: #07091c;
       display: block;
       transition: all 1s;
-      .nav-list{
+      .nav-list {
         display: flex;
         justify-content: center;
         margin-top: 300px;
         font-size: 30px;
         color: white;
-        ul{
-          li{
+        ul {
+          li {
             display: block;
             margin-bottom: 20px;
-            a{
+            a {
               text-decoration: none;
-              color: white
+              color: white;
             }
           }
         }
       }
     }
-    a:hover .nav-list-container{
+    a:hover .nav-list-container {
       display: block;
     }
   }
-  .nav-button:hover .nav-list-container{
-    right:0;
+  .nav-button:hover .nav-list-container {
+    right: 0;
   }
   .basic-info {
     @include section_style;
@@ -332,7 +333,7 @@ body {
           transition: all 1s;
           z-index: 0;
         }
-        img:hover{
+        img:hover {
           z-index: 999;
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
         }
@@ -366,9 +367,9 @@ body {
       height: 70px;
       width: 70px;
       margin: 70px auto;
-      a{
-        i{
-          color: #000
+      a {
+        i {
+          color: #000;
         }
       }
     }
@@ -524,7 +525,7 @@ body {
               text-align: center;
               padding: 20px;
               margin-right: 20px;
-            
+
               .icon {
                 margin-bottom: 20px;
               }
@@ -575,7 +576,7 @@ body {
                   line-height: 22px;
                 }
               }
-              .readmore{
+              .readmore {
                 display: inline-flex;
                 background-color: blueviolet;
                 width: 100px;
@@ -585,15 +586,14 @@ body {
                 justify-content: center;
                 border: 1px solid white;
                 margin: 10px 0;
-                a{
-                  color: #FFF;
+                a {
+                  color: #fff;
                 }
-
               }
             }
           }
         }
-        .service:hover .service_flip{
+        .service:hover .service_flip {
           transform: rotateY(180deg);
         }
       }

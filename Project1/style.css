@@ -445,6 +445,8 @@ body .resume .container .resume-content .resume-content__eductions .timeline .ti
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   background: #fff;
   box-sizing: border-box;
+  width: 100%;
+  height: 180px;
 }
 
 body .resume .container .resume-content .resume-content__eductions .timeline .timeline-item .time-info {
@@ -502,6 +504,8 @@ body .resume .container .resume-content .resume-content__experiences .timeline .
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   background: #fff;
   box-sizing: border-box;
+  width: 100%;
+  height: 180px;
 }
 
 body .resume .container .resume-content .resume-content__experiences .timeline .timeline-item .time-info {
@@ -640,7 +644,7 @@ body .services .container .services-list .service .service_flip .flip_card--back
 }
 
 body .services .container .services-list .service .service_flip .flip_card--back .readmore a {
-  color: #FFF;
+  color: #fff;
 }
 
 body .services .container .services-list .service:hover .service_flip {
