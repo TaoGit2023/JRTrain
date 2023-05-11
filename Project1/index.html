@@ -497,12 +497,12 @@
         </div>
       </div>
       <div class="customer-info">
-        <form action="#">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Phone">
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-          <button><span class="text">Submit</span></button>
+        <form id= "contact-form" action="mailto:tom.xu1210@gmail.com" method="post" enctype="text/plain">
+          <input id="name" type="text" placeholder="Full Name">
+          <input id="email" type="email" placeholder="Email">
+          <input id ="phone" type="text" placeholder="Phone">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+          <button id="submit"><span class="text">Submit</span></button>
         </form>
       </div>
     </div>
@@ -544,6 +544,17 @@
       </div>
     </div>
   </section>
+  <script>
+    const btn_submit = document.getElementById("submit");
+    btn_submit.addEventListener('click',()=>{
+      const name = encodeURIComponent(document.getElementById("name").value);
+      const email = encodeURIComponent(document.getElementById("email").value);
+      const phone = encodeURIComponent(document.getElementById("phone").value);
+      const message = encodeURIComponent(document.getElementById("message").value);
+      const mailtolink = `mailto:tom.xu1210@gmail.com?subject=Contact Form Submission&body=Name: ${name}%0D%0AEmail: ${email}%0D%0APhone:${phone}%0D%0AMessage: ${message}`;
+      window.location.href = mailtolink;
+    })
+  </script>
 </body>
 
 </html>
