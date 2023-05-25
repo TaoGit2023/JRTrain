@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+@media  screen and (max-width: 900px) {
+  body .nav .nav-button{
+   position: fixed;
+   top: 20vh;
+   left: 0vh;
+  }
+}
 @mixin h3_style() {
   h3 {
     text-transform: capitalize;
@@ -48,12 +56,13 @@
     .timeline-item {
       margin: 0 0 48px 0;
       padding: 30px;
+      max-width: 500px;
       border-radius: 15px;
       box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
       background: #fff;
       box-sizing: border-box;
       width: 100%;
-      height: 180px;
+      max-height: 500px;
 
       .time-info {
         margin-top: -40px;
@@ -151,14 +160,15 @@ body {
   overflow-x: hidden;
   background-blend-mode: overlay;
   padding: 20px;
+
   .nav {
     .nav-button {
       width: 50px;
       height: 50px;
       border-radius: 10px;
       position: fixed;
-      top: 100px;
-      right: 100px;
+      top: 10vh;
+      right: 10vh;
       background-color: #07091c;
       opacity: 0.7;
       a {
@@ -222,9 +232,6 @@ body {
           }
         }
       }
-    }
-    a:hover .nav-list-container {
-      display: block;
     }
   }
   .nav-button:hover .nav-list-container {
@@ -334,7 +341,7 @@ body {
           z-index: 0;
         }
         img:hover {
-          z-index: 999;
+          z-index: 1;
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
         }
       }
@@ -780,7 +787,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         .contact-info {
-          min-width: 500px;
+          max-width: 500px;
           margin: 0 30px;
           .contact-info__content {
             display: flex;
@@ -838,6 +845,7 @@ body {
       @include container_style;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       .foot-content {
         border-radius: 15px;
         padding: 10px;

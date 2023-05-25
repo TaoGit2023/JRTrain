@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@media screen and (max-width: 900px) {
+  body .nav .nav-button {
+    position: fixed;
+    top: 20vh;
+    left: 0vh;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +34,8 @@ body .nav .nav-button {
   height: 50px;
   border-radius: 10px;
   position: fixed;
-  top: 100px;
-  right: 100px;
+  top: 10vh;
+  right: 10vh;
   background-color: #07091c;
   opacity: 0.7;
 }
@@ -96,10 +104,6 @@ body .nav .nav-list-container .nav-list ul li {
 body .nav .nav-list-container .nav-list ul li a {
   text-decoration: none;
   color: white;
-}
-
-body .nav a:hover .nav-list-container {
-  display: block;
 }
 
 body .nav-button:hover .nav-list-container {
@@ -234,7 +238,7 @@ body .basic-info .container .basic-info__photo img {
 }
 
 body .basic-info .container .basic-info__photo img:hover {
-  z-index: 999;
+  z-index: 1;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -441,12 +445,13 @@ body .resume .container .resume-content .resume-content__eductions .timeline {
 body .resume .container .resume-content .resume-content__eductions .timeline .timeline-item {
   margin: 0 0 48px 0;
   padding: 30px;
+  max-width: 500px;
   border-radius: 15px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   background: #fff;
   box-sizing: border-box;
   width: 100%;
-  height: 180px;
+  max-height: 500px;
 }
 
 body .resume .container .resume-content .resume-content__eductions .timeline .timeline-item .time-info {
@@ -500,12 +505,13 @@ body .resume .container .resume-content .resume-content__experiences .timeline {
 body .resume .container .resume-content .resume-content__experiences .timeline .timeline-item {
   margin: 0 0 48px 0;
   padding: 30px;
+  max-width: 500px;
   border-radius: 15px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.06);
   background: #fff;
   box-sizing: border-box;
   width: 100%;
-  height: 180px;
+  max-height: 500px;
 }
 
 body .resume .container .resume-content .resume-content__experiences .timeline .timeline-item .time-info {
@@ -882,7 +888,7 @@ body .contact .container .contact-content {
 }
 
 body .contact .container .contact-content .contact-info {
-  min-width: 500px;
+  max-width: 500px;
   margin: 0 30px;
 }
 
@@ -983,6 +989,7 @@ body .foot .container {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 body .foot .container .foot-content {
